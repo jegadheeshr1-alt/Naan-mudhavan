@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Jegadheesh Pandi</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(120deg, #00c6ff, #0072ff);
+      color: #fff;
+    }
+
+    header {
+      padding: 40px 20px;
+      display:flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img { 
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      animation: bounce 2s infinite;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e3e3e3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ffeb3b;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    ul li {
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    ul li img {
+      width: 80px;
+      height: 50px;
+      border-radius: 6px;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    a {
+      color: yellow;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Jega.jpg" alt="Profile Photo">
+    <div class="topic">
+      <h1>Jegadheesh Pandi</h1>
+      <p>B.Sc Computer Science | Web Developer</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science graduate with a strong interest in programming and databases. I enjoy building websites and learning new technologies.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>SSLC - Govt Boys Hr Sec School Avinashi</li>
+      <li>HSC - Govt Boys Hr Sec School Avinashi</li>
+      <li>B.Sc. Computer Science</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Python</li>
+      <li>MongoDB</li>
+      <li>HTML, CSS, JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li><img src="n.jpg" alt="Web Dev Certificate"><b>Web Development Certification</b> - Coursera, 2023</li>
+    </ul>
+  </section>
+  
+  <section id="resume">
+  <h2>Resume</h2>
+  <p>You can download my resume using the button below:</p>
+  <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+</section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Portfolio Website</b> - Personal portfolio website built using HTML, CSS, and JavaScript.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Email: jegadheeshr1@gmail.com</li>
+      <li>Phone: +91 6384334168</li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/jegadheesh" target="_blank">linkedin.com/in/jegadheesh</a></li>
+      <li>GitHub: <a href="https://github.com/jegadheesh" target="_blank">github.com/jegadheesh</a></li>
+    </ul>
+  </section>
+  
+</section><nav>  
+  <a href="#about">About</a>  
+  <a href="#education">Education</a>  
+  <a href="#skills">Skills</a>  
+  <a href="#certificates">Certificates</a>  
+  <a href="#projects">Projects</a>  
+  <a href="#contact">Contact</a>  
+  <a href="#resume">Resume</a> <!-- Added Resume link -->
+</nav>
+  <footer>
+    <p>© 2025 Jegadheesh Pandi | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
